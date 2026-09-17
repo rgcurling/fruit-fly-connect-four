@@ -1,0 +1,81 @@
+{
+  "nodes": {
+    "body": {
+      "materials": {
+        "body": {
+          "source_faces": 113992,
+          "output_faces": 19215
+        },
+        "black": {
+          "source_faces": 54718,
+          "output_faces": 5962
+        },
+        "red": {
+          "source_faces": 59304,
+          "output_faces": 12753
+        },
+        "ocelli": {
+          "source_faces": 11904,
+          "output_faces": 1152
+        },
+        "bristle-brown": {
+          "source_faces": 3080,
+          "output_faces": 592
+        },
+        "lower": {
+          "source_faces": 6000,
+          "output_faces": 2879
+        },
+        "brown": {
+          "source_faces": 10096,
+          "output_faces": 1438
+        }
+      },
+      "source_faces": 259094,
+      "output_faces": 43991
+    },
+    "wing_left": {
+      "materials": {
+        "brown": {
+          "source_faces": 6228,
+          "output_faces": 1622
+        },
+        "membrane": {
+          "source_faces": 500,
+          "output_faces": 500
+        }
+      },
+      "source_faces": 6728,
+      "output_faces": 2122
+    },
+    "wing_right": {
+      "materials": {
+        "brown": {
+          "source_faces": 6228,
+          "output_faces": 1680
+        },
+        "membrane": {
+          "source_faces": 500,
+          "output_faces": 496
+        }
+      },
+      "source_faces": 6728,
+      "output_faces": 2176
+    }
+  },
+  "source_faces": 272550,
+  "output_faces": 48289,
+  "scale_applied": 1.6349856263059404,
+  "hinges": {
+    "wing_left": [
+      0.05743953652916784,
+      0.07879239678434044,
+      -0.0706307748494443
+    ],
+    "wing_right": [
+      0.05743953652916784,
+      0.07879239678434044,
+      0.07063198326338896
+    ]
+  }
+}

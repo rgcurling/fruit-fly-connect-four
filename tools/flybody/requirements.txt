@@ -1,0 +1,6 @@
+# Conversion-time only. None of this ships to the browser or the backend.
+trimesh>=4.0
+numpy>=1.24
+fast-simplification>=0.1.7
+Pillow>=10.0        # trimesh needs it to handle materials
+scipy>=1.11          # trimesh needs it for normal repair

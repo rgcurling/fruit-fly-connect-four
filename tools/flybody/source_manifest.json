@@ -1,0 +1,39 @@
+{
+  "source": {
+    "name": "flybody",
+    "owner": "TuragaLab",
+    "url": "https://github.com/TuragaLab/flybody",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/TuragaLab/flybody/blob/main/LICENSE",
+    "attribution": "FlyBody: anatomically-detailed MuJoCo model of the adult fruit fly Drosophila melanogaster, from the Turaga Lab (HHMI Janelia Research Campus) with Google DeepMind.",
+    "asset_root": "flybody/fruitfly/assets"
+  },
+  "model_definition": {
+    "file": "flybody/fruitfly/assets/fruitfly.xml",
+    "used_for": [
+      "kinematic tree: body positions and orientations for the rest pose",
+      "geom placement: per-mesh local offsets and rotations",
+      "material table: flat RGBA colours per anatomical material",
+      "global mesh scale (0.1)"
+    ]
+  },
+  "geometry": {
+    "format": "Wavefront OBJ",
+    "count": 85,
+    "note": "Only visual geoms are converted. MuJoCo collision primitives (classes 'collision', 'collision-membrane', 'adhesion-collision') are skipped; they are physics volumes, not anatomy."
+  },
+  "modifications": [
+    "Kinematic tree baked to world space at the model's default (rest) pose.",
+    "Meshes grouped by material and concatenated, then decimated with quadric edge collapse.",
+    "Coordinate system converted from MuJoCo Z-up to glTF Y-up.",
+    "Model recentred and uniformly scaled so body length is 1.0 scene unit.",
+    "Wings split into their own nodes, with geometry expressed relative to each wing hinge so they can be animated in the browser.",
+    "Flat MuJoCo materials mapped to glTF PBR metallic-roughness materials."
+  ],
+  "not_used": [
+    "MuJoCo physics (joints, actuators, tendons, adhesion, fluid model)",
+    "flybody Python runtime, tasks, agents and training code",
+    "the .msh binary meshes (the .obj sources are used instead)",
+    "blender_model/drosophila.blend"
+  ]
+}
